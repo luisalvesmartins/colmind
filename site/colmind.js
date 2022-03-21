@@ -103,13 +103,19 @@ function mapRefresh(){
 function processInstruction(o)
 {
   var act=mind.getAllData();
-  //console.log("=>" + o.o)
+  console.log("=>" + o.o)
+  //console.log("=>", o.obj)
   switch (o.o) {
       case "addChild":
           mind.addChild(MindElixir.E(o.obj.parent),o.obj);
           break;
       case "finishEdit":
-          mind.setNodeTopic(MindElixir.E(o.obj.id),o.obj.topic)
+          try {
+            mind.setNodeTopic(MindElixir.E(o.obj.id),o.obj.topic)
+          } catch (error) {
+            // console.log(error)              
+            // console.log(o.obj.id, o.obj.topic);
+          }
         break;
       case "insertSibling":
       case "moveUpNode":
