@@ -1,0 +1,19 @@
+BODY {
+    margin: 0;
+    font: 10pt verdana;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#header {
+    padding: 5px;
+    border-bottom: 1px solid #575656;
+}
+
+#logo {
+    font-size: 16pt;
+    padding-bottom: 5px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColMind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-elixir/dist/MindElixir.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mind-elixir/dist/painter.js"></script>    
+  <div id="header">
+    <div id="logo">ColMind</div>
+    ID:
+    <input id=txtID type="text" value="demo"/>
+    <button onclick="join()">Join</button>
+  </div>
+  <div id="map"></div>
+  <script src="colmind.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+  "name": "colmind",
+  "version": "1.0.0",
+  "description": "Collaborative Mindmap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luisalvesmartins/colmind.git"
+  },
+  "author": "Luis Alves Martins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luisalvesmartins/colmind/issues"
+  },
+  "homepage": "https://github.com/luisalvesmartins/colmind#readme",
+  "dependencies": {
+    "socket.io": "^4.4.1"
+  }
+}
