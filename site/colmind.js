@@ -18,9 +18,9 @@ socket.on("roomData",(data,lastUpdate)=>{
   initMind(data);
 })
 socket.on("recInst",(data)=>{
-  console.log("recInst")
+  //console.log("recInst")
   LastInstReceived=data;
-  console.log(data)
+  //console.log(data)
   processInstruction(data);
 })
 
@@ -28,7 +28,7 @@ function initMind(newData){
   var dat={
         nodeData: {
           id: 'root',
-          topic: 'Mind Elixir',
+          topic: 'ColMind',
           root: true,
           children:[],
           expanded: true,
@@ -73,7 +73,7 @@ function initMind(newData){
     //console.log(operation,operation.obj.id, operation.obj.topic)
     if ((operation.name==LastInstReceived.o) && (LastInstReceived.obj.parent==operation.obj.parent) && (LastInstReceived.obj.topic==operation.obj.topic))
     {
-      console.log("Ignore") //for now
+      //console.log("Ignore") //for now
     }
     else
     {

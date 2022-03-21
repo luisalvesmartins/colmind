@@ -119,7 +119,7 @@ io.on("connection", (socket) => {
     });
 
     socket.on('operation', (roomName,data)=>{
-        console.log("operation:",roomName);
+        //console.log("operation:",roomName);
         socket.to(roomName).emit('recInst',data)
     })
 
